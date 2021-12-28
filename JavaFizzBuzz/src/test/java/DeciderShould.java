@@ -17,4 +17,16 @@ class DeciderShould {
         // assert
         assertEquals("Fizz", result);
     }
+    @Test
+    @DisplayName("Low value starting test")
+    void clientFive() {
+        // arrange test conditions
+        Decider systemUnderTest = new Decider();
+
+        // act
+        String result = systemUnderTest.decide(5);
+
+        // assert
+        assertEquals("Buzz", result);
+    }
 }
