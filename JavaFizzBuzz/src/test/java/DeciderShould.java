@@ -53,4 +53,16 @@ class DeciderShould {
         // assert
         assertEquals("Buzz", result);
     }
+    @Test
+    @DisplayName("divisible by three AND five")
+    void decideFifteenIsFizzBuzz() {
+        // arrange test conditions
+        Decider systemUnderTest = new Decider();
+
+        // act
+        String result = systemUnderTest.decide(15);
+
+        // assert
+        assertEquals("FizzBuzz", result);
+    }
 }
