@@ -12,7 +12,7 @@ class DeciderShould {
         Decider systemUnderTest = new Decider();
 
         // act
-        String result = systemUnderTest.decide("Test string");
+        String result = systemUnderTest.decide(5);
 
         // assert
         assertEquals("FizzBuzz", result);

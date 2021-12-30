@@ -1,5 +1,6 @@
 public class Decider {
-    public String decide(String input) {
-        return "FizzBuzz";
+    public String decide(int input) {
+        if (input % 5 == 0 ) {
+            return "FizzBuzz";
     }
 }
